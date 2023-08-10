@@ -1,0 +1,180 @@
+/* Resetting margin and padding for common elements */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic body styling with font and background color */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e8eaf6;
+}
+
+/* Header styling */
+header {
+  background: #029aff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Profile image styling */
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+}
+
+/* Bio section with constraints on width and line height */
+.bio {
+  max-width: 800px;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+/* Navigation bar styling */
+nav ul {
+  background: #d9ff00;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+/* Skill grid layout */
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for individual skill categories */
+.skill-category {
+  flex: 1 1 calc(33.333% - 30px);
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin: 15px;
+}
+
+/* Navigation list item styling */
+nav ul li {
+  display: inline;
+  padding: 20px;
+}
+
+/* Generic section styling */
+section {
+  border: 2px solid #e0e0e0;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Projects section styling */
+#projects {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Individual project styling */
+.project {
+  border: 2px solid #e0e0e0;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Project title styling */
+.project h3 {
+  color: #35424a;
+  margin-bottom: 10px;
+}
+
+/* Project image styling */
+.project-image {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.project img {
+  width: 100px; 
+  height: auto;
+}
+
+/* Connect section styling */
+#connect {
+  background: #ffb6c1;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ffb6c1;
+}
+
+/* Email section styling */
+.email-section {
+  background: #ffb6c1;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+/* Social links image styling */
+.social-links img {
+  width: 30px;
+  height: auto;
+}
+
+/* Contact form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffb6c1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Input fields and buttons styling */
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background: #ffb6c1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .skill-category {
+    flex: 1 1 calc(100% - 30px); /* One category per row on small screens */
+  }
+
+  nav ul li {
+    display: block; /* Stack navigation items on small screens */
+    padding: 10px;
+    text-align: left;
+  }
+
+  .profile-image {
+    width: 100px; /* Smaller profile image on small screens */
+  }
+
+  .bio, #projects, .project {
+    margin: 10px;
+    padding: 10px;
+  }
+}
